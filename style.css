@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bokor", system-ui;
+    font-weight: bold;
+}
+
+.digital-clock {
+    background-color: #000;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+    gap: 50px;
+    user-select: none;
+    border-radius: 2rem;
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+    width: 100%; 
+    margin-top: 100px;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-family: "Bokor", system-ui;
+}
+
+.week .active {
+    color: whitesmoke;
+}
+
+.time {
+  font-family: "Bokor", system-ui;
+  font-weight: 400px;
+}
+
+.hour, .min, .dot {
+    display: inline-block;
+    font-size: 13rem;
+}
+
+.min {
+    display: math;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 400px) {
+    .digital-clock {
+        width: 100%; 
+        font-size: 13px;
+        padding: 20px;
+    }
+
+    .hour, .min, .dot {
+        font-size: 100px;
+         
+    }
+}
+
