@@ -17,6 +17,17 @@ function update() {
     } else {
         dot.classList.remove('invisible');
     }
+    let hours = now.getHours();
+    let period = 'AM';
+
+    if (hours >= 12) {
+        period = 'PM';
+        if (hours > 12) {
+            hours -= 12;
+        }
+    }else if (hours === 0) {
+        hours = 12;
+    }    
     hour.textContent = String(now.getHours())
         .padStart(2, '0');
       min.textContent = String(now.getMinutes())
